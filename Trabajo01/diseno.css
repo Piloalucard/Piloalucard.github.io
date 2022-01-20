@@ -1,0 +1,106 @@
+*
+{
+	margin:0px;
+	padding:0px;
+	font-family: 'Quicksand';
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('Quicksand-Regular.ttf');
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("gray.jpg");
+    
+}
+header
+{
+    width: 100%;
+    height: 20%;
+    float: left;
+    background-image: url("black.jpg");
+
+
+    
+}
+main
+{
+    width: 100%;
+    height: 60%;
+    float: left;
+}
+.info
+{
+
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: right;
+    
+}
+.about
+{
+
+    height: 100%;
+    width: 40%;
+    float: left;
+    text-align: left;
+    
+}
+.imagen
+{
+    height: 100%;
+    width: 10%;
+    float: left;
+    
+}
+.cuad
+{
+    height: 50%;
+    width:33%;
+    float: left;
+
+}
+
+
+
+img
+{
+    margin: 15px 10px 10px 15px;
+    border-style: groove;
+    border-color: #ECEBE9;
+    border-radius: 5px;
+    float: left;
+    
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    color:#FFFFFF;
+}
+h2
+{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3:hover
+{
+    color: #808080;
+    font-style: italic;
+}
+
+h5
+{
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+
+}
