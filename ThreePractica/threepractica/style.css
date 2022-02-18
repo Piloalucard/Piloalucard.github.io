@@ -3,3 +3,38 @@ canvas{
   top: 0;
   left: 0;
 }
+
+main{
+  position: absolute;
+  display: grid;
+  width: 99%;
+  grid-template-columns: repeat(12,1fr);
+  font-family: 'Dosis', sans-serif;
+  
+}
+
+header{
+  grid-column:8/12;
+}
+div.izq{
+  grid-column:2/6;
+}
+div.salto{
+  grid-column:1/12;
+}
+div.der{
+  grid-column:8/ 12;
+}
+
+h1,h2,h3{
+  color: #FFB51B;
+  background-color: black;
+  font-weight: 600;
+  padding: 10px 20px 10px;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 22px;
+}
+
+h1{
+  font-size: 26px;
+}
