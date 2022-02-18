@@ -1,3 +1,4 @@
+//Gustavo P.V 2021
 import './style.css';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
@@ -35,18 +36,7 @@ const materialMol = new THREE.MeshStandardMaterial({
 
 
 
-/*
-const earthTexture = new THREE.TextureLoader().load('assets/earth.jpg');
-const normalEarthTexture = new THREE.TextureLoader().load('assets/earthNormal.jpg');
 
-const earth = new THREE.Mesh(
-  new THREE.SphereGeometry(16,32,32),
-  new THREE.MeshStandardMaterial({
-    map: earthTexture,
-    normalMap: normalEarthTexture
-  })
-);
-scene.add(earth);*/
 
 
 const metalTexture = new THREE.TextureLoader().load('assets/metal.jpg');
@@ -222,3 +212,8 @@ function animate(){
 
 
 animate();
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT,function(){
+  console.log("Server up in port: ",PORT)
+});
