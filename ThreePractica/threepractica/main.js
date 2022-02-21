@@ -1,7 +1,8 @@
 //Gustavo P.V 2021
 import './style.css';
-import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import * as THREE from './node_modules/three';
+//import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls';
+
 
 const scene = new THREE.Scene();
 
@@ -39,7 +40,7 @@ const materialMol = new THREE.MeshStandardMaterial({
 
 
 
-const metalTexture = new THREE.TextureLoader().load('assets/metal.jpg');
+const metalTexture = new THREE.TextureLoader().load('/assets/metal.jpg');
 const sphereMol = new THREE.SphereGeometry( 4, 16, 16 );
 
 function crearHex(x,y,z,ts=6,a=6.283185307179586,r=0)
@@ -185,7 +186,7 @@ function addStar(){
 Array(100).fill().forEach(addStar); */
 
 
-const bgTexture = new THREE.TextureLoader().load('assets/molecules.jpg');
+const bgTexture = new THREE.TextureLoader().load('/assets/molecules.jpg');
 scene.background = bgTexture;
 
 function moveCamera(){
@@ -213,7 +214,3 @@ function animate(){
 
 animate();
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT,function(){
-  console.log("Server up in port: ",PORT)
-});
