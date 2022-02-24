@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Crash;
+    src: url('crash-a-like.ttf');
+    font-weight:400;
+    font-weight:normal;
+}
+
+body{
+    text-align: center;
+    vertical-align:middle;
+    font-family:'Crash';
+
+}
